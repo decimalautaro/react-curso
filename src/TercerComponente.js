@@ -14,7 +14,12 @@ export const TercerComponente = ({ nombre, apellido, ficha }) => {
 };
 
 TercerComponente.propsType = {
-  nombre: PropsType.string,
+  nombre: PropsType.string.isRequired,
   apellido: PropsType.string,
   ficha: PropsType.object,
+};
+
+TercerComponente.defaultProps = {
+  nombre: "lautaro andres",
+  apellido: "decima",
 };

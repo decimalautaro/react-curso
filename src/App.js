@@ -15,11 +15,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Bienvenido al curso</p>
-        <TercerComponente
-          nombre="lautaro"
-          apellido="decima"
-          ficha={ficha_medica}
-        />
+        <TercerComponente ficha={ficha_medica} />
 
         <MiComponente />
 
