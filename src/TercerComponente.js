@@ -5,6 +5,8 @@ export const TercerComponente = ({ nombre, apellido, ficha }) => {
   return (
     <div>
       <ul>
+        <li>{nombre}</li>
+        <li>{apellido}</li>
         <li>{ficha.altura}</li>
       </ul>
     </div>
