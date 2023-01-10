@@ -16,6 +16,13 @@ export const EventosComponentes = () => {
     alert("has salido de la caja");
   };
 
+  const estasDentro = (e) => {
+    console.log("estas dentro");
+  };
+
+  const estasFuera = (e) => {
+    console.log("estas fuera");
+  };
   return (
     <>
       <div>
@@ -29,6 +36,15 @@ export const EventosComponentes = () => {
         <div id="caja" onMouseEnter={hasEntrado} onMouseLeave={hasSalido}>
           pasar por encima
         </div>
+
+        <p>
+          <input
+            type="text"
+            onFocus={estasDentro}
+            onBlur={estasFuera}
+            placeholder="Introducir nombre"
+          />
+        </p>
       </div>
     </>
   );
