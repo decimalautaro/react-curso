@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { AvisoComponent } from "./AvisoComponent";
 
-export const UseEfect = () => {
+export const EjemploUseEfect = () => {
   const [usuario, setUsuario] = useState("lautaro");
   const [fecha, setFecha] = useState("03-11-1994");
   const [contador, setContador] = useState(0);
@@ -38,6 +39,8 @@ export const UseEfect = () => {
         />
         <button onClick={cambiarFecha}>Cambiar fecha</button>
       </p>
+
+      {usuario === "LAUTARO" && <AvisoComponent />}
     </div>
   );
 };

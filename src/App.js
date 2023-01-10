@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-
-import { UseEfect } from "./Components/UseEfect";
+import { EjemploUseEfect } from "./Components/EjemploUseEfect";
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Bienvenido al curso</p>
-        <UseEfect />
+        <EjemploUseEfect />
       </header>
     </div>
   );
