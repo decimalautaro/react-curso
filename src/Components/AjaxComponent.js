@@ -32,26 +32,34 @@ export const AjaxComponent = () => {
   //   ]);
   // };
 
-  const getUsuariosAjaxPms = () =>{
-    fetch ("https://reqres.in/api/users?page1")
-    .then((respuesta) => respuesta.json())
-    .then(
+  // const getUsuariosAjaxPms = () =>{
+  //   fetch ("https://reqres.in/api/users?page=1")
+  //   .then((respuesta) => respuesta.json())
+  //   .then(
       
-      (resultadoFinal) =>{
-        setUsuarios(resultadoFinal.data);
-        console.log(usuarios)
-    },
-    error =>{
-        console.log(error);
-    })
-  }
+  //     (resultadoFinal) =>{
+  //       setUsuarios(resultadoFinal.data);
+  //       console.log(usuarios)
+  //   },
+  //   error =>{
+  //       console.log(error);
+  //   })
+  // }
+
+const  getUsuariosAjaxAsynAwait = async ()=>{
+  const  peticion = await fetch ("https://reqres.in/api/users?page=1")
+  const {data} =  await peticion.json()
+
+  setUsuarios(data)
+  console.log(data)
+}
 
   useEffect(() => {
    
  
     // getUsuariosEstaticos();
-    getUsuariosAjaxPms();
-    
+    // getUsuariosAjaxPms();
+    getUsuariosAjaxAsynAwait()
 
   },[]);
   return (
