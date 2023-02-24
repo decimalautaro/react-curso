@@ -1,9 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { EjemploUseEfect } from "./Components/EjemploUseEfect";
-import { AjaxComponent } from "./Components/AjaxComponent";
-import { FormularioComponent } from "./Components/FormularioComponent";
-import { FormularioUseRef } from "./Components/FormularioUseRef";
+import { Ejemplo2UseREf } from "./Components/Ejemplo2UseREf";
+// import { EjemploUseEfect } from "./Components/EjemploUseEfect";
+// import { AjaxComponent } from "./Components/AjaxComponent";
+// import { FormularioComponent } from "./Components/FormularioComponent";
+// import { FormularioUseRef } from "./Components/FormularioUseRef";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         {/* <AjaxComponent /> */}
         {/* <EjemploUseEfect /> */}
         {/* <FormularioComponent /> */}
-        <FormularioUseRef />
-        
+        {/* <FormularioUseRef /> */}
+        <Ejemplo2UseREf/> 
+
       </header>
     </div>
   );
